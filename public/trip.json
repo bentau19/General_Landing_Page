@@ -1,0 +1,18 @@
+{
+  "title": "Your AI Travel Planner",
+  "heroImage": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1350&q=80",
+  "problem": "Planning trips can be stressful, time-consuming, and confusing.",
+  "solution": "Our AI generates personalized travel itineraries in seconds, tailored to your preferences, budget, and style.",
+  "cta": "Get Early Access",
+  "ctaLink": "https://formspree.io/f/xjkagawj",
+  "company_name": "Traveler",
+  "colors": {
+    "background": "#1a1a1a",
+    "heroOverlay": "rgba(255,255,255,0.05)",
+    "textPrimary": "#f5f5f5",
+    "textSecondary": "#d5d5d5",
+    "button": "#ff6f3c",
+    "buttonHover": "#e65a2b",
+    "footer": "#111111"
+  }
+}

@@ -1,0 +1,144 @@
+/* General page styles */
+.landing-page {
+  font-family: Georgia, sans-serif; /* פונט נקי ומודרני */
+  color: #f5f5f5;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: #2c2c2c;
+}
+
+/* Hero section */
+.landing-hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 100px 20px;
+  flex: 1;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+.landing-hero::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.4);
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+.landing-hero h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  z-index: 1;
+  margin-bottom: 25px;
+  line-height: 1.2;
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Content Section + CTA */
+.landing-content {
+  text-align: center;
+  padding: 50px 20px;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.landing-content .problem {
+  font-size: 1.6rem; /* גדל קצת לכותרת משנה */
+  font-weight: 600;
+  color: #e0e0e0;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.landing-content .solution {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #d5d5d5;
+  margin-bottom: 40px;
+  line-height: 1.6;
+}
+
+/* CTA Form */
+.cta-form {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.cta-form input[type="email"] {
+  padding: 16px;
+  font-size: 1rem;
+  border-radius: 50px;
+  border: none;
+  flex: 1 1 250px;
+  min-width: 200px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  background-color: #3a3a3a;
+  color: #f5f5f5;
+}
+
+.cta-form input[type="email"]::placeholder {
+  color: #ccc;
+}
+
+.cta-form button {
+  padding: 16px 45px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 50px;
+  border: none;
+  background-color: #ff8c42;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.cta-form button:hover {
+  background-color: #e67630;
+}
+
+/* Footer */
+.landing-footer {
+  text-align: center;
+  padding: 20px;
+  color: #bbb;
+  background-color: #1f1f1f;
+  font-size: 0.9rem;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {opacity: 0; transform: translateY(-20px);}
+  to {opacity: 1; transform: translateY(0);}
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .landing-hero h1 {
+    font-size: 2rem;
+  }
+  .landing-content .problem {
+    font-size: 1.3rem;
+  }
+  .landing-content .solution {
+    font-size: 1rem;
+  }
+  .cta-form input[type="email"] {
+    padding: 14px;
+  }
+  .cta-form button {
+    padding: 14px 35px;
+  }
+}
