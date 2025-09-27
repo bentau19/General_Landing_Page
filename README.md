@@ -1,15 +1,17 @@
-Landing Page Generator
+# Landing Page Generator
 
-This project is a dynamic landing page website where each idea can have its own customizable landing page.
+This project is a **dynamic landing page website** where each idea can have its **own customizable landing page**.  
 
-Adding a New Landing Page
+---
 
-To add a landing page for your idea:
+## **Adding a New Landing Page**
 
-Create a JSON file in the project folder (e.g., test.json) with the name of your idea.
+To add a landing page for your idea:  
 
-Structure your JSON file like this:
+1. Create a **JSON file** in the project folder (e.g., `test.json`) with the name of your idea.  
+2. Structure your JSON file like this:
 
+```json
 {
   "heroImage": "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=1200&q=80", // Image displayed at the top
   "title": "Turn Any Song Into Piano Sheet Music Instantly", // Catchy title
@@ -28,6 +30,7 @@ Structure your JSON file like this:
     "footer": "#1f1f1f"
   }
 }
+```
 
 Viewing Your Landing Page
 
